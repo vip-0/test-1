@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+        <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+        <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+        <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <![endif]-->
+        <!--[if lt IE 7]>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
+        <![endif]-->
   </head>
   <body>
-    <section class="nav-container">
+    <header class="nav-container">
       <div class="wrapper">
         <nav>
           <div class="logo">Logo</div>
@@ -39,7 +42,7 @@
           </ul>
         </nav>
       </div>
-    </section>
+    </header>
 
     <section class="header-container">
       <div class="wrapper">
@@ -197,10 +200,112 @@
                         <span class="read-time">12 min read</span>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/blog-1.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                        <ul>
+                            <li>MUTUAL FUND</li>
+                            <li>Tax</li>
+                        </ul>
+                        <h5>5 Money Habits To Boost Your Savings</h5>
+                        <p>Run fast, advanced analysis by seamlessly switching between a cloud-based SQL</p>
+                        <span class="date">Apr 10</span>
+                        <span class="read-time">12 min read</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/blog-2.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                        <ul>
+                            <li>MUTUAL FUND</li>
+                            <li>Tax</li>
+                        </ul>
+                        <h5>Should You Invest In Gold Now</h5>
+                        <p>Run fast, advanced analysis by seamlessly switching between a cloud-based SQL</p>
+                        <span class="date">Apr 10</span>
+                        <span class="read-time">12 min read</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/blog-1.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                        <ul>
+                            <li>MUTUAL FUND</li>
+                            <li>Tax</li>
+                        </ul>
+                        <h5>5 Things To Accomplish With Money In 40s</h5>
+                        <p>Run fast, advanced analysis by seamlessly switching between a cloud-based SQL</p>
+                        <span class="date">Apr 10</span>
+                        <span class="read-time">12 min read</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="js/main.js" async defer></script>
+    <section class="newsletter">
+        <div class="wrapper">
+            <div class="heading-center">
+                <h2>Get Weekly Newsletter</h2>
+            </div>
+            <p>Keep up with the latest news and updates that matter to your money.</p>
+            <div class="subscribe-div">
+                <input type="email" id="txtSubscriptionEmail" placeholder="Email Address" maxlength="200">
+                <a class="subscribe-btn" href="javascript:" onclick="EmailSubscriptionValidation()">Subscribe</a>
+                <span class="error_msg">Please enter valid email id</span>
+                <span class="success" style="display:none">You have successfully subscribed for newsletter.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="logo-socials">
+                <h2>Logo</h2>
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+            </div>
+            <div class="footer-sec">
+                <h5>Calculators</h5>
+                <ul>
+                    <li><a href="#">SIP Calculator</a></li>
+                    <li><a href="#">FD Calculator</a></li>
+                    <li><a href="#">CI Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Why Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="contact-sec">
+                <h5>Contact</h5>
+                <ul>
+                    <li><img src="images/email.png" alt=""><a href="mailto:hello@google.com">hello@google.com</a></li>
+                    <li><img src="images/location.png" alt="">Arun Chambers, Tardeo. Mumbai - 400034 India.</li>
+                </ul>
+            </div>
+            <hr />
+            <div class="copyright">
+                <p>Copyright © 2021. All rights reserved.</p>
+            </div>
+            <div class="lastfoot">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
