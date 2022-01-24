@@ -93,11 +93,27 @@ li {
   line-height: 36px;
   text-align: center;
   background: #4313a1;
-  background: -webkit-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
-  background: -moz-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
-  background: linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
+  background: -webkit-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: -moz-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 45px;
 }
 /* Header css */
 header {
@@ -275,7 +291,178 @@ nav ul li a:hover {
   padding: 100px 220px;
   display: flex;
 }
+.our-solutions .bigbox-content {
+  display: flex;
+  width: 100%;
+  background: rgba(239, 188, 206, 0.25);
+  border-radius: 20px;
+  background-image: url(../images/solutions-bg1.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 32px;
+}
+.our-solutions .bigbox-content .leftside {
+  padding: 48px 48px;
+}
+.our-solutions .bigbox-content .leftside h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #18141f;
+  margin-bottom: 8.1px;
+}
+.our-solutions .bigbox-content .leftside p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5f527a;
+  margin-bottom: 18px;
+}
+.our-solutions .bigbox-content .leftside .btn-2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #d67f9c;
+  display: block;
+}
+.our-solutions .bigbox-content .leftside .btn-2:hover {
+  color: #4313a1;
+}
+.our-solutions .bigbox-content .leftside .btn-2:after {
+  content: url(../images/round-arrow-1.png);
+  position: relative;
+  margin-left: 8px;
+  top: 12px;
+}
+.our-solutions .bigbox-content .rightside {
+  padding: 38.37px 40.74px 31.78px 0;
+}
+.our-solutions .bigbox-content .rightside img {
+  width: auto;
+}
 
+.our-solutions .smallboxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.our-solutions .smallbox-content-1 {
+  width: 50%;
+  background: rgba(255, 224, 173, 0.25);
+  border-radius: 20px;
+  background-image: url(../images/solutions-bg2.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+.our-solutions .smallbox-content-1 .leftside {
+  padding: 48px 86px 48px 48px;
+}
+.our-solutions .smallbox-content-1 .leftside h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #18141f;
+  margin-bottom: 8.1px;
+}
+.our-solutions .smallbox-content-1 .leftside p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5f527a;
+  margin-bottom: 86px;
+}
+.our-solutions .smallbox-content-1 .leftside .btn-3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFC465;
+  display: block;
+  margin-left: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.our-solutions .smallbox-content-1 .leftside .btn-3:hover {
+  color: #4313a1;
+}
+.our-solutions .smallbox-content-1 .leftside .btn-3:after {
+  content: url(../images/round-arrow-2.png);
+  position: relative;
+  margin-left: 8px;
+  top: 12px;
+}
+.our-solutions .smallbox-content-1 .rightside {
+  position: relative;
+}
+.our-solutions .smallbox-content-1 .rightside img {
+  width: 177px;
+  position: absolute;
+  right: 0;
+  padding: 0 32.47px 32.36px 0;
+  top: -153px;
+}
+.our-solutions .smallbox-content-2 {
+  width: 50%;
+  background: rgba(255, 197, 173, 0.25);
+  border-radius: 20px;
+  background-image: url(../images/solutions-bg3.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 32px;
+}
+.our-solutions .smallbox-content-2 .leftside {
+  padding: 48px 86px 48px 48px;
+}
+.our-solutions .smallbox-content-2 .leftside h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #18141f;
+  margin-bottom: 8.1px;
+}
+.our-solutions .smallbox-content-2 .leftside p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5f527a;
+  margin-bottom: 55px;
+}
+.our-solutions .smallbox-content-2 .leftside .btn-4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFA07A;
+  display: block;
+  margin-left: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.our-solutions .smallbox-content-2 .leftside .btn-4:hover {
+  color: #4313a1;
+}
+.our-solutions .smallbox-content-2 .leftside .btn-4:after {
+  content: url(../images/round-arrow-3.png);
+  position: relative;
+  margin-left: 8px;
+  top: 12px;
+}
+.our-solutions .smallbox-content-2 .rightside {
+  position: relative;
+}
+.our-solutions .smallbox-content-2 .rightside img {
+  width: 192px;
+  position: absolute;
+  right: 0;
+  padding: 0px 32.24px 32px 0;
+  top: -147px;
+}
 @media only screen and (max-width: 767px) {
   .wrapper {
     width: 100%;
