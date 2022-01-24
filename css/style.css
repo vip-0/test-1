@@ -113,7 +113,55 @@ li {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
+}
+
+.heading-title-left {
+  width: 100%;
+  text-align: left;
+}
+.heading-title-left h6 {
+  width: auto;
+  display: inline-block;
+  padding: 8px 24px;
+  background: rgba(235, 227, 253, 0.25);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4313a1;
+  margin-bottom: 24px;
+}
+.heading-title-left h2 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: left;
+  background: #4313a1;
+  background: -webkit-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: -moz-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 48px;
 }
 /* Header css */
 header {
@@ -483,15 +531,16 @@ nav ul li a:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 100px 0 74px 7px;
+  padding: 100px 0 44px 7px;
 }
 
 .why-us .w-u-content {
+  position:relative;
   width: 25%;
   float: left;
-  border-right: 1px dotted;
   padding: 0 24px;
   text-align: center;
+  margin: 48px 0 30px 0;
 }
 
 .why-us .w-u-content:after {
@@ -519,6 +568,28 @@ nav ul li a:hover {
   text-align: center;
   letter-spacing: 0.21px;  
   color: #483D5C; 
+}
+.about-us{
+  padding:100px 154px 84px 220px;
+  width: 100%;
+  display: flex;
+}
+.about-us ul{
+  margin:0;
+  padding:0;
+}
+.about-us ul li{
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #5F527A;
+}
+.about-us ul li:before{
+  content: url(../images/list-icon.png);
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #008dd2;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
