@@ -577,6 +577,9 @@ nav ul li a:hover {
 .about-content{
   display: flex;
 }
+.about-content .leftpart{
+  width:100%;
+}
 .about-content .leftpart h2 {
   font-weight: bold;
   font-size: 26px;
@@ -590,19 +593,19 @@ nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 48px;
 }
-.about-us ul{
+.about-us .leftpart ul{
   margin:0;
   padding:0;
 }
-.about-us ul li{
+.about-us .leftpart ul li{
   font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 color: #5F527A;
 margin-left:24px;
-margin-bottom:16px;
+margin-bottom:5px;
 }
-.about-us ul li:before{
+.about-us .leftpart ul li:before{
   content: url(../images/list-icon.png);
     font-size: 13px;
     display: inline-block;
@@ -613,6 +616,12 @@ margin-bottom:16px;
     position: absolute;
     padding-right: 20px;
     padding-top: 4px;
+}
+.about-us .rightpart{
+  width: 100%;
+}
+.about-us .rightpart img{
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
