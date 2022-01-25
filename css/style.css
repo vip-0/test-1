@@ -574,6 +574,22 @@ nav ul li a:hover {
   width: 100%;
   display: flex;
 }
+.about-content{
+  display: flex;
+}
+.about-content .leftpart h2 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: left;
+  background: #4313a1;
+  background: -webkit-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
+  background: -moz-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
+  background: linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 48px;
+}
 .about-us ul{
   margin:0;
   padding:0;
@@ -583,6 +599,8 @@ nav ul li a:hover {
 font-size: 16px;
 line-height: 24px;
 color: #5F527A;
+margin-left:24px;
+margin-bottom:16px;
 }
 .about-us ul li:before{
   content: url(../images/list-icon.png);
@@ -590,6 +608,11 @@ color: #5F527A;
     display: inline-block;
     margin-right: 10px;
     color: #008dd2;
+    margin-left: -25px;
+    color: #008dd2;
+    position: absolute;
+    padding-right: 20px;
+    padding-top: 4px;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
