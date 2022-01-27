@@ -26,6 +26,7 @@ $(document).ready(function () {
         margin: 50,
         navText: ['', ''],
         autoplay: false,
+        autoWidth:true,
         responsive: {
             0: {
                 items: 1,
