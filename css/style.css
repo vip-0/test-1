@@ -574,13 +574,13 @@ nav ul li a:hover {
   width: 100%;
   display: flex;
 }
-.about-content{
+.about-us .about-content{
   display: flex;
 }
-.about-content .leftpart{
+.about-us .about-content .leftpart{
   width:100%;
 }
-.about-content .leftpart h2 {
+.about-us .about-content .leftpart h2 {
   font-weight: bold;
   font-size: 26px;
   line-height: 36px;
@@ -593,11 +593,11 @@ nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 48px;
 }
-.about-us .leftpart ul{
+.about-us .about-us .leftpart ul{
   margin:0;
   padding:0;
 }
-.about-us .leftpart ul li{
+.about-us .about-us .leftpart ul li{
   font-weight: normal;
 font-size: 16px;
 line-height: 24px;
@@ -623,6 +623,44 @@ margin-bottom:5px;
 .about-us .rightpart img{
   width: 100%;
 }
+.blogs{
+  width:100%;
+  padding:100px 220px;
+}
+
+.blogs .blog-slider{
+  width:100%;
+  position: relative;
+}
+
+.blogs .blog-slider.owl-carousel .owl-nav .owl-prev,
+.blogs .blog-slider.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.blogs .blog-slider.owl-carousel .owl-nav .owl-prev.disabled,
+.blogs .blog-slider.owl-carousel .owl-nav .owl-next.disabled {
+  display: none;
+}
+
+.blogs .blog-slider.owl-carousel .owl-nav .owl-prev {
+  background: url("../images/left-arrow-blue.png") no-repeat center center
+    #ffffff;
+  left: -100px;
+}
+
+.blogs .blog-slider.owl-carousel .owl-nav .owl-next {
+  background: url("../images/right-arrow-blue.png") no-repeat center center
+    #ffffff;
+  right: -100px;
+}
+.blogs .blog-slider{position: relative; width:100%;}
 @media only screen and (max-width: 767px) {
   .wrapper {
     width: 100%;
