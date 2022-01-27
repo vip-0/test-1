@@ -19,11 +19,11 @@ $(document).ready(function () {
     }
 
 
-    $('#ruPaySlider').owlCarousel({
+    $('#heroSlider').owlCarousel({
         loop: false,
         nav: true,
         dots: false,
-        margin: 0,
+        margin: 50,
         navText: ['', ''],
         autoplay: false,
         responsive: {
@@ -36,7 +36,7 @@ $(document).ready(function () {
                 items: 2
             },
             1000: {
-                items: 4
+                items: 3
             }
         }
     });
