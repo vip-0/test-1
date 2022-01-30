@@ -390,7 +390,7 @@ nav ul li a:hover {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
-} 
+}
 .our-solutions .bigbox-content .rightside {
   padding: 38.37px 40.74px 31.78px 0;
 }
@@ -434,7 +434,7 @@ nav ul li a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #FFC465;
+  color: #ffc465;
   display: block;
 }
 .our-solutions .smallbox-content-1 .leftside .btn-3:hover {
@@ -496,7 +496,7 @@ nav ul li a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #FFA07A;
+  color: #ffa07a;
   display: block;
 }
 .our-solutions .smallbox-content-2 .leftside .btn-4:hover {
@@ -527,7 +527,7 @@ nav ul li a:hover {
   padding: 0px 32.24px 32px 0;
   top: -147px;
 }
-.why-us{
+.why-us {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -535,7 +535,7 @@ nav ul li a:hover {
 }
 
 .why-us .w-u-content {
-  position:relative;
+  position: relative;
   width: 25%;
   float: left;
   padding: 0 24px;
@@ -547,7 +547,7 @@ nav ul li a:hover {
   height: 168px;
   width: 1px;
   border: 1px dashed rgba(95, 82, 122, 0.5);
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -556,29 +556,29 @@ nav ul li a:hover {
   content: none;
 }
 
-.why-us .w-u-content img{
-  width:auto;
-  margin-bottom:24px;
+.why-us .w-u-content img {
+  width: auto;
+  margin-bottom: 24px;
 }
 
-.why-us .w-u-content p{
+.why-us .w-u-content p {
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  letter-spacing: 0.21px;  
-  color: #483D5C; 
+  letter-spacing: 0.21px;
+  color: #483d5c;
 }
-.about-us{
-  padding:100px 154px 84px 220px;
+.about-us {
+  padding: 100px 154px 84px 220px;
   width: 100%;
   display: flex;
 }
-.about-us .about-content{
+.about-us .about-content {
   display: flex;
 }
-.about-us .about-content .leftpart{
-  width:100%;
+.about-us .about-content .leftpart {
+  width: 100%;
 }
 .about-us .about-content .leftpart h2 {
   font-weight: bold;
@@ -586,55 +586,71 @@ nav ul li a:hover {
   line-height: 36px;
   text-align: left;
   background: #4313a1;
-  background: -webkit-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
-  background: -moz-linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
-  background: linear-gradient( to top right, #4313a1 20%, #bd4238 72%, #ff5c00 100% );
+  background: -webkit-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: -moz-linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
+  background: linear-gradient(
+    to top right,
+    #4313a1 20%,
+    #bd4238 72%,
+    #ff5c00 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 48px;
 }
-.about-us .about-us .leftpart ul{
-  margin:0;
-  padding:0;
+.about-us .about-us .leftpart ul {
+  margin: 0;
+  padding: 0;
 }
-.about-us .about-us .leftpart ul li{
+.about-us .about-us .leftpart ul li {
   font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: #5F527A;
-margin-left:24px;
-margin-bottom:5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5f527a;
+  margin-left: 24px;
+  margin-bottom: 5px;
 }
-.about-us .leftpart ul li:before{
+.about-us .leftpart ul li:before {
   content: url(../images/list-icon.png);
-    font-size: 13px;
-    display: inline-block;
-    margin-right: 10px;
-    color: #008dd2;
-    margin-left: -25px;
-    color: #008dd2;
-    position: absolute;
-    padding-right: 20px;
-    padding-top: 4px;
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #008dd2;
+  margin-left: -25px;
+  color: #008dd2;
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 4px;
 }
-.about-us .rightpart{
+.about-us .rightpart {
   width: 100%;
 }
-.about-us .rightpart img{
+.about-us .rightpart img {
   width: 100%;
 }
-.blogs{
-  width:100%;
-  padding: 100px 120px;
+.blogs {
+  width: 100%;
+  padding: 100px 0px;
   display: flex;
   justify-content: center;
+  background: linear-gradient(360deg, rgba(235, 227, 253, 0.5) 0%, rgba(255, 255, 255, 0.5) 56.46%);
 }
 
-.blogs .blog-slider{
-  width:100%;
+.blogs .blog-slider {
+  width: 100%;
   display: flex;
-  overflow: hidden;
   position: relative;
+  padding: 0 100px;
 }
 
 .blogs .blog-slider.owl-carousel .owl-nav .owl-prev,
@@ -654,18 +670,21 @@ margin-bottom:5px;
 }
 
 .blogs .blog-slider.owl-carousel .owl-nav .owl-prev {
-  background: url("../images/left-arrow-blue.png") no-repeat center center
-    #ffffff;
-  left: -100px;
+  background: url("../images/left-arrow-blue.png") no-repeat center center;
+  left: 0;
 }
 
 .blogs .blog-slider.owl-carousel .owl-nav .owl-next {
-  background: url("../images/right-arrow-blue.png") no-repeat center center
-    #ffffff;
-  right: -100px;
+  background: url("../images/right-arrow-blue.png") no-repeat center center;
+  right: 0;
 }
-.blogs .blog-slider{position: relative; width:100%;}
-.blogs .blog-slider .blog-box{position: relative; width:100%;overflow: hidden;align-items:center;justify-content: center;}
+.blogs .blog-slider .blog-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (max-width: 767px) {
   .wrapper {
     width: 100%;
