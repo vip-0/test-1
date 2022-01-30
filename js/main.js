@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 
     $('#heroSlider').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         margin: 50,
@@ -31,13 +31,13 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 nav: false,
-                dots: true
+                dots: true,
             },
             600: {
-                items: 2
+                items: 2,
             },
             1000: {
-                items: 3
+                items: 3,
             }
         }
     });
