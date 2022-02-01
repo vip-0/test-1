@@ -23,7 +23,7 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         dots: false,
-        margin: 50,
+        margin: 40,
         navText: ['', ''],
         autoplay: false,
         autoWidth:true,
