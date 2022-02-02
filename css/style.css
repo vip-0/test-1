@@ -709,15 +709,12 @@ nav ul li a:hover {
   color: #ffffff;
   transition: 0.5s linear;
 }
-.blogs .blog-slider .blog-box:hover .blog-content ul li {
+.blogs .blog-slider .blog-box:hover .blog-content ul li a {
   border-color: #ffffff;
 }
 .blogs .blog-slider .blog-box:hover .blog-content a:hover {
-  color: #bd4238;
-}
-
-.blogs .blog-slider .blog-box .blog-content ul li:hover {
-  border-color: #bd4238;
+  color: #ff5c00;
+  border-color: #ff5c00;
 }
 
 .blogs .blog-slider .blog-box:hover .blog-content a,
@@ -739,14 +736,14 @@ nav ul li a:hover {
 }
 .blogs .blog-slider .blog-box .blog-content ul li {
   display: inline-block;
-  padding: 4px 8px;
-  border: 0.5px solid #4313a1;
-  border-radius: 20px;
   margin-bottom: 17.25px;
   margin-right: 9.18px;
 }
 .blogs .blog-slider .blog-box .blog-content ul li a {
   color: #4313a1;
+  border: 0.5px solid #4313a1;
+  padding: 4px 8px;
+  border-radius: 20px;
 }
 .blogs .blog-slider .blog-box .blog-content h5 {
   font-weight: 500;
@@ -872,7 +869,10 @@ nav ul li a:hover {
 
 .subscribe-box .subscribe-div a:hover,
 .subscribe-box .subscribe-div button:hover {
-  background: #bd4238;
+  background: #ffffff;
+  color: #4313a1;
+  border: 1px solid #4313a1;
+  transition: 0.3s linear;
 }
 
 .subscribe-box .subscribe-div span.success {
@@ -899,13 +899,14 @@ footer .footer-box {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-bottom: 114.62px;
 }
 
 footer .footer-box .logo-socials h2 {
   font-weight: bold;
   font-size: 32px;
   line-height: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 24px;
 }
 
@@ -915,6 +916,59 @@ footer .footer-box .logo-socials a {
   order: 0;
   flex-grow: 0;
   margin: 0px 24px 0 0;
+}
+
+footer .footer-box .logo-socials a img:hover {
+  transform: rotate(360deg);
+  transition: 0.3s linear;
+}
+footer h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+footer .footer-box .footer-sec ul li {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0 12px 0px;
+}
+footer .footer-box .footer-sec ul li a {
+  color: #ffffff;
+}
+footer .footer-box .footer-sec ul li a:hover {
+  color: #ff5c00;
+}
+footer .footer-box .contact-sec ul li {
+  font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    position: relative;
+    margin-left: 24px;
+}
+footer .footer-box .contact-sec ul li img {
+  position: absolute;
+    left: -24px;
+    top: 2px;
+}
+footer .footer-box .contact-sec ul li a {
+  color: #ffffff;
+}
+footer .footer-box .contact-sec ul li a:hover {
+  color: #ff5c00;
+}
+.footer hr{
+  background: #878787;
+opacity: 0.3;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
