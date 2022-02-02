@@ -810,13 +810,21 @@ nav ul li a:hover {
 }
 
 .subscribe-div {
+  text-align: center;
   position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .subscribe-div input {
   width: 100%;
-  padding: 15px 30px;
-  border-radius: 50px;;
+  height: 48px;
+  background: rgba(38, 11, 91, 0.05);
+  border: 1px solid rgba(38, 11, 91, 0.11);
+  box-sizing: border-box;
+  border-radius: 50px;
 }
 
 .subscribe-div a,
@@ -824,13 +832,15 @@ nav ul li a:hover {
   position: absolute;
   width: 202px;
   height: 48px;
+  line-height: 47px;
+  padding: inherit;
   font-weight: 900;
   color: #ffffff;
   text-align: center;
   align-items: center;
   justify-content: center;
-  top: 7px;
-  right: 10px;
+  top: 2px;
+  right: 0;
   background: #4313A1;
   border-radius: 50px;
 }
