@@ -948,17 +948,17 @@ footer .footer-box .footer-sec ul li a:hover {
 }
 footer .footer-box .contact-sec ul li {
   font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    margin-bottom: 12px;
-    position: relative;
-    margin-left: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  position: relative;
+  margin-left: 24px;
 }
 footer .footer-box .contact-sec ul li img {
   position: absolute;
-    left: -24px;
-    top: 2px;
+  left: -24px;
+  top: 2px;
 }
 footer .footer-box .contact-sec ul li a {
   color: #ffffff;
@@ -966,9 +966,14 @@ footer .footer-box .contact-sec ul li a {
 footer .footer-box .contact-sec ul li a:hover {
   color: #ff5c00;
 }
-.footer hr{
+footer hr {
   background: #878787;
-opacity: 0.3;
+  opacity: 0.3;
+  border: 2px solid #878787;
+}
+footer .footer-details{
+  display: flex;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
