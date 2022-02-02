@@ -891,6 +891,30 @@ footer {
   width: 100%;
   display: flex;
   padding: 100px 0 60px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+footer .footer-box .logo-socials h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+footer .footer-box .logo-socials a {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px 0 0;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
