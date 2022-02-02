@@ -791,6 +791,9 @@ nav ul li a:hover {
   width: 100%;
   padding: 100px 0;
   background: #f5f2fe;
+  background-image: url(../images/newsletter-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 .newsletter h2 {
   font-weight: bold;
@@ -800,35 +803,57 @@ nav ul li a:hover {
   margin-bottom: 24px;
   color: #4313a1;
 }
-.newsletter p{
+.newsletter p {
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: #5F527A;
+  color: #5f527a;
   margin-bottom: 48px;
 }
 
-.subscribe-div {
-  text-align: center;
+.subscribe-box {
   position: relative;
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.subscribe-div input {
+.subscribe-box .subscribe-div {
+  width: 627px;
+  position: relative;
+}
+
+.subscribe-box .subscribe-div input {
   width: 100%;
+  padding: 14px 34px 13px;
   height: 48px;
   background: rgba(38, 11, 91, 0.05);
   border: 1px solid rgba(38, 11, 91, 0.11);
-  box-sizing: border-box;
+  outline: 0;
   border-radius: 50px;
 }
+.subscribe-box .subscribe-div input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #5f527a;
+}
+.error_msg {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
 
-.subscribe-div a,
-.subscribe-div button {
+.success {
+  display: none;
+  color: green;
+}
+
+.subscribe-box .subscribe-div a,
+.subscribe-box .subscribe-div button {
   position: absolute;
   width: 202px;
   height: 48px;
@@ -839,33 +864,18 @@ nav ul li a:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
-  top: 2px;
+  top: 0;
   right: 0;
-  background: #4313A1;
+  background: #4313a1;
   border-radius: 50px;
 }
 
-/* .subscribe-div a::before,
-.subscribe-div button::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-  transform: rotate(45deg);
-  top: 0;
-  bottom: 0;
-  right: 16px;
-  margin: auto;
-} */
-
-.subscribe-div a:hover,
-.subscribe-div button:hover {
-  background: #000213;
+.subscribe-box .subscribe-div a:hover,
+.subscribe-box .subscribe-div button:hover {
+  background: #bd4238;
 }
 
-.subscribe-div span.success {
+.subscribe-box .subscribe-div span.success {
   color: #00b95a;
   display: block;
   text-align: center;
@@ -873,6 +883,14 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   margin-top: 5px;
+}
+
+footer {
+  background: #190049;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 100px 0 60px 0;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
