@@ -334,6 +334,7 @@ nav ul li a:hover {
   width: 100%;
 }
 
+/* Solutions */
 .our-solutions {
   width: 100%;
   padding: 100px 220px;
@@ -527,6 +528,8 @@ nav ul li a:hover {
   padding: 0px 32.24px 32px 0;
   top: -147px;
 }
+
+/* Why Us */
 .why-us {
   width: 100%;
   display: flex;
@@ -569,6 +572,8 @@ nav ul li a:hover {
   letter-spacing: 0.21px;
   color: #483d5c;
 }
+
+/* About Us */
 .about-us {
   padding: 100px 154px 84px 220px;
   width: 100%;
@@ -638,6 +643,8 @@ nav ul li a:hover {
 .about-us .rightpart img {
   width: 100%;
 }
+
+/* Blogs */
 .blogs {
   width: 100%;
   padding: 100px 0px 60px 0;
@@ -784,6 +791,8 @@ nav ul li a:hover {
   margin-right: 8px;
   top: -3.5px;
 }
+
+/* Newsletter */
 .newsletter {
   width: 100%;
   padding: 100px 0;
@@ -885,14 +894,21 @@ nav ul li a:hover {
   margin-top: 5px;
 }
 
+/* Footer */
 footer {
   background: #190049;
   position: relative;
   width: 100%;
   display: flex;
-  padding: 100px 0 60px 0;
+  padding: 100px 0 0px 0;
   justify-content: space-around;
   align-items: center;
+}
+footer::after {
+  content: url(../images/merge-bg.png);
+  position: absolute;
+  top: -65%;
+  right: 0;
 }
 
 footer .footer-box {
@@ -945,6 +961,10 @@ footer .footer-box .footer-sec ul li a {
 }
 footer .footer-box .footer-sec ul li a:hover {
   color: #ff5c00;
+  transition: 0.8s linear;
+}
+footer .footer-box .contact-sec {
+  padding-right: 140px;
 }
 footer .footer-box .contact-sec ul li {
   font-weight: normal;
@@ -965,16 +985,47 @@ footer .footer-box .contact-sec ul li a {
 }
 footer .footer-box .contact-sec ul li a:hover {
   color: #ff5c00;
+  transition: 0.8s linear;
 }
 footer hr {
-  background: #878787;
   opacity: 0.3;
   border: 2px solid #878787;
 }
-footer .footer-details{
+footer .footer-details {
   display: flex;
   justify-content: space-between;
+  padding: 15px 0 64px;
+  align-items: center;
 }
+
+footer .footer-details .copyright p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+footer .footer-details .lastfoot ul li {
+  align-items: center;
+  display: inline-flex;
+}
+footer .footer-details .lastfoot ul li:first-child {
+  border-right: 1px solid #414141;
+  margin-right: 12px;
+  padding-right: 12px;
+}
+footer .footer-details .lastfoot ul li a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+footer .footer-details .lastfoot ul li a:hover {
+  color: #ff5c00;
+  transition: 0.8s linear;
+}
+
+/* Responsive Media Queries */
 @media only screen and (max-width: 767px) {
   .wrapper {
     width: 100%;
