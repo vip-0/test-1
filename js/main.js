@@ -27,6 +27,7 @@ $(document).ready(function () {
         navText: ['', ''],
         autoplay: false,
         autoWidth:true,
+        responsiveClass:true,
         responsive: {
             0: {
                 items: 1,
@@ -34,7 +35,9 @@ $(document).ready(function () {
                 dots: true,
             },
             600: {
-                items: 2,
+                items: 1,
+                nav: false,
+                dots: true,
             },
             1000: {
                 items: 3,
