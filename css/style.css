@@ -1027,9 +1027,60 @@ footer .footer-details .lastfoot ul li a:hover {
 
 /* Responsive Media Queries */
 @media only screen and (max-width: 767px) {
+
   .wrapper {
     width: 100%;
   }
+  .experts {
+      padding: 0;
+  }
+  .experts .main-experts {
+    display: block;
+    justify-content: initial;
+    text-align: center;
+}
+.experts .main-experts .experts-content {
+  padding: 104px 32px 64px 37px;
+}
+.experts .main-experts .experts-content h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  background: #4313a1;
+  background: -webkit-linear-gradient( to bottom right, #4313a1 20%, #bd4238 81%, #ff5c00 66% );
+  background: -moz-linear-gradient( to bottom right, #4313a1 20%, #bd4238 81%, #ff5c00 66% );
+  background: linear-gradient( to bottom right, #4313a1 20%, #bd4238 81%, #ff5c00 66% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+.experts .main-experts .experts-content h1 span {
+  background: none;
+  -webkit-background-clip: unset;
+}
+.experts .main-experts .experts-content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #483D5C;
+  margin-bottom: 32px;
+}
+.btn-div {
+  text-align: center;
+  width: 100%;
+}
+.experts .main-experts .experts-content .btn-1 {
+  text-align: center;
+  display: initial;
+  float: none;
+}
+.experts .experts-image {
+  width: 100%;
+  padding: 0px 20px 48px 20px;
+}
   nav {
     display: inline;
     align-items: center;
