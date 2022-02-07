@@ -1026,7 +1026,7 @@ footer .footer-details .lastfoot ul li a:hover {
 }
 
 /* Responsive Media Queries */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
 
   .wrapper {
     width: 100%;
@@ -1092,10 +1092,13 @@ footer .footer-details .lastfoot ul li a:hover {
   width: 100%;
   padding: 0px 20px 48px 20px;
 }
+/* .experts .experts-image img {
+  width: auto;
+} */
 
 /* solutions */
 .our-solutions {
-  padding: 48px 20px;
+  padding: 48px 20px 32px 20px;
 }
 .our-solutions .bigbox-content .leftside {
   padding: 0;
