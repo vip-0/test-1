@@ -1030,7 +1030,18 @@ footer .footer-details .lastfoot ul li a:hover {
 
   .wrapper {
     width: 100%;
+    margin:0 auto
   }
+  .heading-title-center h6 {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 12px;
+  }
+  .heading-title-center h2 {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  /* Experts */
   .experts {
       padding: 0;
   }
@@ -1081,6 +1092,82 @@ footer .footer-details .lastfoot ul li a:hover {
   width: 100%;
   padding: 0px 20px 48px 20px;
 }
+
+/* solutions */
+.our-solutions {
+  padding: 48px 20px;
+}
+.our-solutions .bigbox-content .leftside {
+  padding: 0;
+  margin-right: 14px;
+}
+.our-solutions .bigbox-content {
+  padding: 20px;
+  align-items: self-end;
+  margin-bottom: 16px;
+  background-size: contain;
+}
+.our-solutions .bigbox-content .leftside h4, .our-solutions .smallbox-content-1 .leftside h4, .our-solutions .smallbox-content-2 .leftside h4 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.our-solutions .bigbox-content .leftside p, .our-solutions .smallbox-content-1 .leftside p, .our-solutions .smallbox-content-2 .leftside p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+.our-solutions .bigbox-content .leftside .btn-2, .our-solutions .smallbox-content-1 .leftside .btn-3, .our-solutions .smallbox-content-2 .leftside .btn-4 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.our-solutions .bigbox-content .rightside {
+  padding: 0;
+}
+.our-solutions .bigbox-content .rightside img {
+  width: 76.26px;
+}
+.our-solutions .bigbox-content .leftside .btn-2:after {
+  content: url(../images/round-arrow-1-responsive.png);
+  top: 5px;
+}
+.our-solutions .smallbox-content-1 .leftside .btn-3:after {
+  content: url(../images/round-arrow-2-responsive.png);
+  top: 5px;
+}
+.our-solutions .smallbox-content-2 .leftside .btn-4:after {
+  content: url(../images/round-arrow-3-responsive.png);
+  top: 5px;
+}
+.our-solutions .smallboxes {
+  display: block;
+}
+.our-solutions .smallbox-content-1, .our-solutions .smallbox-content-2 {
+  width: 100%;
+  padding: 20px;
+  align-items: self-end;
+  margin-bottom: 16px;
+  background-size: contain;
+  display: flex;
+}
+.our-solutions .smallbox-content-1 .leftside, .our-solutions .smallbox-content-2 .leftside {
+  padding: 0;
+  margin-right: 14px;
+}
+.our-solutions .smallbox-content-1 .rightside img, .our-solutions .smallbox-content-2 .rightside img {
+  width: 105px;
+  position: relative;
+  right: auto;
+  top: auto;
+  padding: 0;
+}
+.our-solutions .smallbox-content-1 .leftside p{
+  margin-bottom: 60px;
+}
+.our-solutions .smallbox-content-2 .leftside p{
+  margin-bottom: 42px;
+}
+/* header */
   nav {
     display: inline;
     align-items: center;
