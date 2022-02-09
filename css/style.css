@@ -1170,6 +1170,27 @@ footer .footer-details .lastfoot ul li a:hover {
 .our-solutions .smallbox-content-2 .leftside p{
   margin-bottom: 42px;
 }
+/* Why-us */
+.why-us {
+    width: 100%;
+    padding: 52px 20px 24px;
+}
+.why-us .w-u-content {
+  width: 100%;
+  margin: 0px 0 24px 0;
+  padding:0
+}
+.why-us .w-u-content:after{
+  content:none
+}
+.why-us .w-u-content img {
+  width: 48px;
+  margin-bottom: 12px;
+}
+.why-us .w-u-content p {
+  font-size: 14px;
+  line-height: 21px;
+}
 /* header */
   nav {
     display: inline;
