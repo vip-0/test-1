@@ -45,13 +45,8 @@ $(document).ready(function () {
         }
     });
 
-    // smooth scrolling navigation
-    $(".inner_banner_content a").click(function () {
-        var target = $(this).attr("href");
-        $("body, html").animate({
-            scrollTop: $(target).offset().top - 80
-        }, 300);
-        return false;
+    $('.hamburger span').click(function () {
+        $('body').toggleClass('overlay');
     });
 
 });
