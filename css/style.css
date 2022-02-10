@@ -581,6 +581,7 @@ nav ul li a:hover {
 }
 .about-us .about-content {
   display: flex;
+  align-items: end;
 }
 .about-us .about-content .leftpart {
   width: 100%;
@@ -613,17 +614,20 @@ nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 48px;
 }
-.about-us .about-us .leftpart ul {
+.about-us .leftpart .mob-image {
+  display: none;
+}
+.about-us .leftpart ul {
   margin: 0;
   padding: 0;
 }
-.about-us .about-us .leftpart ul li {
+.about-us .leftpart ul li {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #5f527a;
   margin-left: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
 }
 .about-us .leftpart ul li:before {
   content: url(../images/list-icon.png);
@@ -666,8 +670,8 @@ nav ul li a:hover {
   padding: 0 100px;
 }
 
-.blogs .blog-slider.owl-carousel .owl-nav .owl-prev,
-.blogs .blog-slider.owl-carousel .owl-nav .owl-next {
+.blogs .owl-carousel .owl-nav .owl-prev,
+.blogs .owl-carousel .owl-nav .owl-next {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -677,26 +681,26 @@ nav ul li a:hover {
   margin: auto;
 }
 
-.blogs .blog-slider.owl-carousel .owl-nav .owl-prev.disabled,
-.blogs .blog-slider.owl-carousel .owl-nav .owl-next.disabled {
+.blogs .owl-carousel .owl-nav .owl-prev.disabled,
+.blogs .owl-carousel .owl-nav .owl-next.disabled {
   display: none;
 }
 
-.blogs .blog-slider.owl-carousel .owl-nav .owl-prev {
+.blogs .owl-carousel .owl-nav .owl-prev {
   background: url("../images/left-arrow-blue.png") no-repeat center center;
   left: 0;
 }
 
-.blogs .blog-slider.owl-carousel .owl-nav .owl-next {
+.blogs .owl-carousel .owl-nav .owl-next {
   background: url("../images/right-arrow-blue.png") no-repeat center center;
   right: 0;
 }
-.blogs .blog-slider .item {
+.blogs .item {
   width: 300px;
   padding-right: 10px;
   padding-left: 10px;
 }
-.blogs .blog-slider .blog-box {
+.blogs .blog-box {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -707,52 +711,55 @@ nav ul li a:hover {
   border-radius: 0px 0px 12px 12px;
   margin: 20px 0 40px 0;
 }
-.blogs .blog-slider .blog-box:hover {
+.blogs .blog-box:hover {
   transform: scale(1.084);
   transition: 0.3s linear;
 }
-.blogs .blog-slider .blog-box:hover .blog-content {
+.blogs .blog-box:hover .blog-content {
   background-color: #4313a1;
   color: #ffffff;
   transition: 0.5s linear;
 }
-.blogs .blog-slider .blog-box:hover .blog-content ul li a {
+.blogs .blog-box:hover .blog-content ul li a {
   border-color: #ffffff;
 }
-.blogs .blog-slider .blog-box:hover .blog-content a:hover {
+.blogs .blog-box:hover .blog-content a:hover {
   color: #ff5c00;
   border-color: #ff5c00;
 }
 
-.blogs .blog-slider .blog-box:hover .blog-content a,
-.blogs .blog-slider .blog-box:hover .blog-content p,
-.blogs .blog-slider .blog-box:hover .blog-content span {
+.blogs .blog-box:hover .blog-content a,
+.blogs .blog-box:hover .blog-content p,
+.blogs .blog-box:hover .blog-content span {
   color: #ffffff;
   transition: 0.5s linear;
 }
-.blogs .blog-slider .blog-box .img-box {
+.blogs .blog-box .img-box {
   border-radius: 12px 12px 0px 0px;
 }
-.blogs .blog-slider .blog-box .blog-content {
+.blogs .blog-box .img-box img {
+  width: 100%;
+}
+.blogs .blog-box .blog-content {
   width: 100%;
   padding: 25.88px 17.2px 23.25px 17.36px;
 }
-.blogs .blog-slider .blog-box .blog-content ul {
+.blogs .blog-box .blog-content ul {
   margin: 0;
   padding: 0;
 }
-.blogs .blog-slider .blog-box .blog-content ul li {
+.blogs .blog-box .blog-content ul li {
   display: inline-block;
   margin-bottom: 17.25px;
   margin-right: 9.18px;
 }
-.blogs .blog-slider .blog-box .blog-content ul li a {
+.blogs .blog-box .blog-content ul li a {
   color: #4313a1;
   border: 0.5px solid #4313a1;
   padding: 4px 8px;
   border-radius: 20px;
 }
-.blogs .blog-slider .blog-box .blog-content h5 {
+.blogs .blog-box .blog-content h5 {
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
@@ -760,17 +767,17 @@ nav ul li a:hover {
   color: #483d5c;
   margin-bottom: 8.62px;
 }
-.blogs .blog-slider .blog-box .blog-content h5 a {
+.blogs .blog-box .blog-content h5 a {
   color: #483d5c;
 }
-.blogs .blog-slider .blog-box .blog-content p {
+.blogs .blog-box .blog-content p {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: #5f527a;
   margin-bottom: 17.25px;
 }
-.blogs .blog-slider .blog-box .blog-content span {
+.blogs .blog-box .blog-content span {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -778,19 +785,20 @@ nav ul li a:hover {
   text-transform: uppercase;
   color: rgba(95, 82, 122, 0.7);
 }
-.blogs .blog-slider .blog-box .blog-content span a {
+.blogs .blog-box .blog-content span a {
   color: rgba(95, 82, 122, 0.7);
 }
-.blogs .blog-slider .blog-box .blog-content .read-time {
+.blogs .blog-box .blog-content .read-time {
   color: rgba(95, 82, 122, 0.7);
   margin-left: 8px;
 }
-.blogs .blog-slider .blog-box .blog-content .read-time:before {
+.blogs .blog-box .blog-content .read-time:before {
   content: ".";
   position: relative;
   margin-right: 8px;
   top: -3.5px;
 }
+.blog-mob-slider{display: none;}
 
 /* Newsletter */
 .newsletter {
@@ -1032,14 +1040,18 @@ footer .footer-details .lastfoot ul li a:hover {
     width: 100%;
     margin:0 auto
   }
-  .heading-title-center h6 {
+  .heading-title-center h6, .heading-title-left h6 {
     font-size: 10px;
     line-height: 13px;
     margin-bottom: 12px;
   }
-  .heading-title-center h2 {
+  .heading-title-center h2, .heading-title-left h2, .about-us .about-content .leftpart h2 {
     font-size: 20px;
     margin-bottom: 32px;
+    text-align: center;
+  }
+  .heading-title-left {
+    text-align: center;
   }
   /* Experts */
   .experts {
@@ -1191,6 +1203,28 @@ footer .footer-details .lastfoot ul li a:hover {
   font-size: 14px;
   line-height: 21px;
 }
+/* about us */
+.about-us {
+  padding: 48px 20px 32px;
+}
+.about-us .about-content {
+  display: block;
+}
+.about-us .rightpart {
+  display: none;
+}
+.about-us .leftpart .mob-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.about-us .leftpart ul li {
+  font-size: 12px;
+  line-height: 18px;
+}
+/* blogs */
+.blog-slider{display: none;}
+.blog-mob-slider{display: block;}
 /* header */
   nav {
     display: inline;
