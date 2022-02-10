@@ -45,6 +45,15 @@ $(document).ready(function () {
         }
     });
 
+    // smooth scrolling navigation
+    $(".nav-items a").click(function () {
+        var target = $(this).attr("href");
+        $("body, html").animate({
+            scrollTop: $(target).offset().top - 50
+        }, 300);
+        return false;
+    });
+
     $('.hamburger span').click(function () {
         $('body').toggleClass('overlay');
     });
